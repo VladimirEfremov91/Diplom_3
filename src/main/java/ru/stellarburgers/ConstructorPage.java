@@ -35,17 +35,17 @@ public class ConstructorPage {
     public void clickFillingButton() {
         fillingButtonIsNotClicked.click();
     }
-//Кнопка Войти в аккуант
+//Кнопка Войти в аккаунт
     @FindBy(how = How.XPATH, using = "//button[text()='Войти в аккаунт']")
     public SelenideElement loginToAccountButton;
-    @Step("Нажатие кнопки Войти в аккуант")
+    @Step("Нажатие кнопки Войти в аккаунт")
     public void clickLoginToAccountButton() {
         loginToAccountButton.click();
     }
 //Кнопка оформить заказ
     @FindBy(how = How.XPATH, using = "//button[text()='Оформить заказ']")
     public SelenideElement createOrderButton;
-    @Step("Проверка отображения кнопки Оформить зазказ")
+    @Step("Проверка отображения кнопки Оформить заказ")
     public boolean isCreateOrderButtonEnabled() {
         return createOrderButton.isEnabled();
     }
